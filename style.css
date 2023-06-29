@@ -1,0 +1,156 @@
+
+/* main */ 
+.main{
+    background: linear-gradient(rgb(40, 39, 39),rgb(101, 15, 101));
+    height: 100vh;
+}
+.button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button:hover {
+    box-shadow: .5px .5px 150px #252525;
+  }
+  
+  .type1::after {
+    content: "FACEBOOK";
+    height: 50px;
+    width: 150px;
+    background-color: #7012a3;
+    color: #ffffff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .type1::before {
+    content: "SEE MORE";
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    color: #000000;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .type1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+  
+  .type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+.t1{
+    color: aqua;
+}
+.mm{
+    border-radius: 50%;
+}
+/* SKILLS*/
+.skills{
+  background: linear-gradient(rgb(101, 15, 101),rgb(40, 39, 39));
+    height: 70vh;
+}
+/* features */ 
+
+.features{
+  background: linear-gradient(rgb(40, 39, 39),rgb(101, 15, 101));
+
+}
+/* portfoilio */ 
+.portfolio{
+  background: linear-gradient(rgb(101, 15, 101),rgb(40, 39, 39));
+}
+/* OFFERS */ 
+.offers{
+  background: linear-gradient(rgb(40, 39, 39),rgb(101, 15, 101));
+}
+/* CONTACT */ 
+.contact{
+  background: linear-gradient(rgb(101, 15, 101),rgb(40, 39, 39));
+
+}
+h3 a{
+  color: #fff;
+}
+/* cursor */
+
+/* scroll bar */ 
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(125, 26, 187);
+  outline: 1px solid slategrey;
+}
+/* media queries */ 
+
+@media (max-width: 768px) {
+    .main{
+        height: 160vh;
+    }
+    .skills{
+      height: 110vh;
+    }
+    .port .yy{
+      margin-top: 40px;
+    }
+    
+  }
+  
+  /* Style rules for devices with a screen width of 768 pixels or more (e.g. tablets and desktops) */
+  @media (min-width: 768px) {
+   
+  }
+  
+  /* Style rules for devices with a screen width between 768 and 992 pixels (e.g. small tablets) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .main{
+        height: 160vh;
+    }
+    .skills{
+      height: 110vh;
+    }
+    .port .yy{
+      margin-top: 40px;
+    }
+  }
+  
+  /* Style rules for devices with a screen width between 992 and 1200 pixels (e.g. larger tablets) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    /* Add styles here */
+  }
+  
+  /* Style rules for devices with a screen width of 1200 pixels or more (e.g. desktops) */
+  @media (min-width: 1200px) {
+    /* Add styles here */
+  }
+  
+  
